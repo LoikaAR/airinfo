@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Sidebar from './components/Sidebar.js';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -9,17 +10,22 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <main>
+        <div className='App-sidebar'>
+          <Sidebar />
+        </div>
+
+        <body>
+          this will be the body
+        </body>
+      </main>
+
+      {/* <Footer /> */}
     </div>
+
   );
 }
 
-export default App;
+// export default App;
